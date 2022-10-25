@@ -291,4 +291,9 @@
      <!-- default refresh rate in the zone defined by brightness and ambient thresholds -->
      <integer name="config_defaultRefreshRateInZone">90</integer>
 
+     <!-- Whether the device supports Smart Pixels -->
+     <bool name="config_enableSmartPixels">true</bool>
+
+     <!-- Pocket Lock -->
+     <bool name="config_pocketModeSupported">true</bool>
 </resources>
