@@ -11,12 +11,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from hotdogb device
 $(call inherit-product, device/oneplus/hotdogb/device.mk)
 
-# Inherit some common cherish stuff.
-$(call inherit-product, vendor/cherish/config/common_full_phone.mk)
+# Inherit some common spark stuff.
+$(call inherit-product, vendor/spark/config/common_full_phone.mk)
 
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := cherish_hotdogb
+PRODUCT_NAME := spark_hotdogb
 PRODUCT_DEVICE := hotdogb
 PRODUCT_BRAND := OnePlus
 PRODUCT_MODEL := HD1905
@@ -40,19 +40,19 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 PRODUCT_GMS_CLIENTID_BASE := android-oneplus
 
-
 # Gapps
-WITH_GMS := true
+WITH_GAPPS := true
+TARGET_SUPPORTS_QUICK_TAP  := true
 
-# Blur
-TARGET_ENABLE_BLUR := true
-
-# Maintainer Stuff
-CHERISH_BUILD_TYPE := UNOFFICIAL
+# Maintainer 
+SPARK_BUILD_TYPE := UNOFFICIAL
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    ro.cherish.maintainer=Ghost
+    ro.spark.maintainer=Ghost
 
 
-# Extra Stuff
-EXTRA_UDFPS_ANIMATIONS := true
-TARGET_SUPPORTS_QUICK_TAP := true    
+# Spark Stuff
+WITH_FOD_ANIMATIONS := true
+TARGET_USES_BLUR := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
+
+
