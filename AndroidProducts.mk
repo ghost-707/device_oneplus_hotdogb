@@ -7,6 +7,7 @@
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/spark_hotdogb.mk
 
+
 COMMON_LUNCH_CHOICES := \
 				    spark_hotdogb-userdebug
 
