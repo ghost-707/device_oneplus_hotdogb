@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/derp_hotdogb.mk
+    $(LOCAL_DIR)/blaze_hotdogb.mk
 
 COMMON_LUNCH_CHOICES := \
-				    derp_hotdogb-user \
-				    derp_hotdogb-userdebug \
-				    derp_hotdogb-eng
+				    blaze_hotdogb-user \
+				    blaze_hotdogb-userdebug \
+				    blaze_hotdogb-eng
