@@ -5,8 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/voltage_hotdogb.mk
+    $(LOCAL_DIR)/derp_hotdogb.mk
 
 COMMON_LUNCH_CHOICES := \
-				    voltage_hotdogb-userdebug \
-				    voltage_hotdogb-eng
+				    derp_hotdogb-user \
+				    derp_hotdogb-userdebug \
+				    derp_hotdogb-eng
