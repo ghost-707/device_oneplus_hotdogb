@@ -14,7 +14,6 @@ $(call inherit-product, device/oneplus/hotdogb/device.mk)
 # Inherit some common Spark stuff.
 $(call inherit-product, vendor/spark/config/common_full_phone.mk)
 
-
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := spark_hotdogb
 PRODUCT_DEVICE := hotdogb
@@ -40,7 +39,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 PRODUCT_GMS_CLIENTID_BASE := android-oneplus
 
-
 # Gapps
 WITH_GAPPS := true
 TARGET_SUPPORTS_QUICK_TAP  := true
@@ -51,9 +49,5 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.spark.maintainer=Ghost
 
 # Spark Stuff
-EXTRA_UDFPS_ANIMATIONS := true
-TARGET_USES_BLUR := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
-TARGET_SUPPORTS_ADAPTIVE_CHARGING := true
-
-
+TARGET_SUPPORTS_ADAPTIVE_CHARGING := trues
