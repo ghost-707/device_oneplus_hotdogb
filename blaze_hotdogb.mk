@@ -14,6 +14,10 @@ $(call inherit-product, device/oneplus/hotdogb/device.mk)
 # Inherit some common Blaze stuff.
 $(call inherit-product, vendor/blaze/config/common_full_phone.mk)
 
+# oneplus camera & gallery
+$(call inherit-product, vendor/oneplus/camera/camera-vendor.mk)
+TARGET_SHIP_OOSGALLERY := true
+TARGET_SHIP_OOSCAM := true
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := blaze_hotdogb
