@@ -39,20 +39,10 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 PRODUCT_GMS_CLIENTID_BASE := android-oneplus
 
-
-# Gapps
-$(call inherit-product, vendor/gapps/common/common-vendor.mk)
-
 # Voltage stuff
-GrapheneApps := false
+GrapheneApps := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
 VOLTAGE_BUILD_TYPE := UNOFFICIAL
 VOLTAGE_MAINTAINER := Ghost
-TARGET_EXCLUDES_AUDIOFX := true
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.voltage.maintainer=Ghost
-
-# Oneplus Camera and Gallery
-$(call inherit-product, vendor/oneplus/camera/camera-vendor.mk)
-TARGET_SHIP_OOSCAM := true
-TARGET_SHIP_OOSGALLERY := true
