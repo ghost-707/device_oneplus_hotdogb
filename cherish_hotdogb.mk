@@ -42,17 +42,15 @@ PRODUCT_GMS_CLIENTID_BASE := android-oneplus
 
 
 # Gapps
-WITH_GMS := true
+TARGET_USES_MINI_GAPPS := true
 
 # Blur
 TARGET_ENABLE_BLUR := true
 
 # Maintainer Stuff
-CHERISH_BUILD_TYPE := UNOFFICIAL
+CHERISH_BUILD_TYPE := Ghostly
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.cherish.maintainer=Ghost
 
-
 # Extra Stuff
-EXTRA_UDFPS_ANIMATIONS := true
 TARGET_SUPPORTS_QUICK_TAP := true    
