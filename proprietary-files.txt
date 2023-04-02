@@ -1,6 +1,6 @@
-#  All unpinned blobs below are extracted from OnePlus7T_qssi-user 11 RKQ1.201022.002 2206241702 release-keys 
+#  All unpinned blobs below are extracted from OnePlus7THydrogen_14.H.31_0310_2206241815
 
-#ACDB
+# ACDB
 vendor/etc/acdbdata/adsp_avs_config.acdb
 vendor/etc/acdbdata/MTP/EU/acdb_version
 vendor/etc/acdbdata/MTP/EU/MTP_Bluetooth_cal.acdb
@@ -136,9 +136,6 @@ vendor/lib64/libarm_proxy_skel.so
 vendor/lib64/libgf_ud_hal.so
 vendor/lib64/libhvx_proxy_stub.so
 
-# ODM feature list
-odm/etc/odm_feature_list
-
 # Sensors
 vendor/etc/sensors/config/ak991x_0.json
 vendor/etc/sensors/config/ak991x_polling_0.json
@@ -221,6 +218,3 @@ vendor/firmware/aw8697_haptic_168.bin
 vendor/firmware/aw8697_haptic_170.bin
 vendor/firmware/aw8697_haptic_172.bin
 vendor/firmware/aw8697_haptic_174.bin
-
-# Vibrator HAL - from hotdogb-user-10-QKQ1.190716.003-2101212100-release-keys
-vendor/lib64/hw/vibrator.default.so|9c9744e702424f1709148a0ba61a238e0f37e37e
